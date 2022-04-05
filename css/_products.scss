@@ -1,0 +1,65 @@
+.tile{
+    .imgBox{
+        position: relative;
+        overflow: hidden;
+        a{
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+        }
+        .gradientStrip{
+            z-index: 1;
+            position: absolute;
+            width: 10px;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: linear-gradient(180deg, $magenta 0%, $blue 100%);
+            transition: transform 0.2s ease-in-out;
+        }
+        img{
+            max-width: 100%;
+            transition: transform 0.2s ease-in-out;
+        }
+        .info{
+            z-index: 1;
+            position: absolute;
+            padding: 0 5px;
+            @include font-size(12px, 1.5);
+            top: 7.5%;
+            right: 0;
+            transition: transform 0.2s ease-in-out;
+        }
+        .soldOut{
+            background-color: $darkGrey2;
+        }
+        .bargain{
+            background-color: $blue;
+        }
+        &:hover{
+            .gradientStrip{
+                transform: translate(0, 101%);
+            }
+            img{
+                transform: scale(1.1) rotate(1deg);
+            }
+            .info{
+                transform: translate(101%, 0);
+            }
+        }
+    }
+    .tileCircle{
+        width: 90px;
+        height: 90px;
+        position: absolute;
+        top: -55px;
+        left: -55px;
+        z-index: -1;
+        @media screen and (max-width: $big){
+            display: none;
+        }
+    }
+}

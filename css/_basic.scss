@@ -1,0 +1,43 @@
+.leftPad{
+    padding-left: 20px;
+}
+.padding{
+    padding: 10px;
+}
+.verticalPad{
+    padding: 10px 0;
+}
+.horizontalPad{
+    padding: 0 10px;
+}
+.noPadding{
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+.marginBottom{
+    margin-bottom: 60px;
+}
+.hiddenOverflow{
+    overflow: hidden;
+}
+.autoHeight{
+    height: auto !important;
+}
+.blue{
+    color: $blue;
+}
+.row{
+    margin: 0;
+}
+.container-fluid{
+    padding: 0;
+}
+.one_third_height{
+    min-height: 33.33333%;
+}
+.borderTileTop{border-bottom: none !important;}
+.borderTileBottom{border-top: none !important;}
+.borderTileMiddle{
+    border-top: none !important;
+    border-bottom: none !important;
+}

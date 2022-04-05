@@ -1,0 +1,14 @@
+.footerBox{
+    background-color: $darkGrey;
+    .fTile{
+        text-align: center;
+        i{
+            @include font-size(60px, 0.5);
+        }
+    }
+    .allRightsReserved{
+        text-align: center;
+        padding-bottom: 5px;
+        color: $blue;
+    }
+}
