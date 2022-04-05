@@ -31,7 +31,7 @@
     $_SESSION['spassword'] = $spassword;
     
     //RECAPTCHA
-    $secret_key = "6LfgK8MZAAAAAK7W8hm3TxEqQZYu9aRqSzTptbwX";
+    // $secret_key = '';
     $check = file_get_contents('https://google.com/recaptcha/api/siteverify?secret='.$secret_key.'&response='.$_POST['g-recaptcha-response']);
     $response = json_decode($check);
     if($response->success == false){
